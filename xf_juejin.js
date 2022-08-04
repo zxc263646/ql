@@ -8,9 +8,9 @@ Cron：10 9 * * *
 
 [task_local]
 #测试脚本
-10 9 * * * https://gitcode.net/xiaofeivip_top/ql/-/raw/master/XFQL/xf_juejin.js, tag=测试脚本, enabled=true
+10 9 * * * https://cdn.jsdelivr.net/gh/xiaofeisvip/ql@main/xf_juejin.js, tag=测试脚本, enabled=true
 [rewrite_local]
-https://gitcode.net/xiaofeivip_top/ql/-/raw/master/XFQL/xf_juejin.js
+https://cdn.jsdelivr.net/gh/xiaofeisvip/ql@main/xf_juejin.js
 [MITM]
 hostname = api.juejin.cn
 */
@@ -72,7 +72,7 @@ async function GetRewrite() {
 
 // CK检测
 async function checkEnv() {
-    let url = `https://gitcode.net/xiaofeivip_top/ql/-/raw/master/XFQL/` + qlName
+    let url = `https://cdn.jsdelivr.net/gh/xiaofeisvip/ql@main/` + qlName
     xfLog(url);
     let body = ``
     let token = `1`

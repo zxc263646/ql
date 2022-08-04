@@ -9,9 +9,9 @@ Cron：12 9 * * *
 重写：
 [task_local]
 #百工驿脚本
-12 9 * * * https://gitcode.net/xiaofeivip_top/ql/-/raw/master/XFQL/xf_bgy.js, tag=测试脚本, enabled=true
+12 9 * * * https://cdn.jsdelivr.net/gh/xiaofeisvip/ql@main/xf_bgy.js, tag=测试脚本, enabled=true
 [rewrite_local]
-https://gitcode.net/xiaofeivip_top/ql/-/raw/master/XFQL/xf_bgy.js
+https://cdn.jsdelivr.net/gh/xiaofeisvip/ql@main/xf_bgy.js
 [MITM]
 hostname = baigongyi.com
 */
@@ -74,7 +74,7 @@ async function GetRewrite() {
 
 // CK检测
 async function checkEnv() {
-    let url = `https://gitcode.net/xiaofeivip_top/ql/-/raw/master/XFQL/` + qlName
+    let url = `https://cdn.jsdelivr.net/gh/xiaofeisvip/ql@main/` + qlName
     xfLog(url);
     let body = ``
     let token = `1`
